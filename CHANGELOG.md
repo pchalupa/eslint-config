@@ -1,3 +1,19 @@
+# 0.0.6 (Tue Aug 09 2022)
+
+#### ⚠️ Pushed to `main`
+
+- docs: fix code ([@pchalupa](https://github.com/pchalupa))
+
+#### 📝 Documentation
+
+- docs: add readme [#6](https://github.com/torolocos/eslint-config/pull/6) ([@pchalupa](https://github.com/pchalupa))
+
+#### Authors: 1
+
+- Petr Chalupa ([@pchalupa](https://github.com/pchalupa))
+
+---
+
 # 0.0.5 (Tue Aug 09 2022)
 
 #### 🐛 Bug Fix
