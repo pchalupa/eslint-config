@@ -4,6 +4,7 @@
 	"author": "torolocos",
 	"main": "index.json",
 	"license": "MIT",
+  "access": "public",
 	"keywords": [
 		"eslint",
 		"eslintconfig"
