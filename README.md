@@ -2,7 +2,7 @@
 
 Custom ESlint config.
 
-## Instalation
+## Installation
 
 ```shell
 yarn add -D @torolocos/eslint-config
