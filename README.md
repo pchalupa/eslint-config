@@ -13,6 +13,5 @@ yarn add -D @torolocos/eslint-config
 ```json
 {
 	"extends": "@torolocos"
-  	...
 }
 ```
