@@ -1,14 +1,28 @@
 {
 	"name": "@torolocos/eslint-config",
 	"version": "0.0.0",
-	"author": "torolocos",
-	"main": "index.json",
-	"license": "MIT",
-  "access": "public",
+	"description": "ESlint config",
 	"keywords": [
 		"eslint",
 		"eslintconfig"
 	],
+	"homepage": "https://github.com/torolocos/eslint-config#readme",
+	"license": "MIT",
+	"author": "torolocos",
+	"files": [
+		"index.json"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "index.json",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/torolocos/eslint-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/torolocos/eslint-config/issues"
+	},
 	"scripts": {
 		"release": "auto shipit"
 	},
