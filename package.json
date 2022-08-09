@@ -1,13 +1,31 @@
 {
 	"name": "@torolocos/eslint-config",
 	"version": "0.0.0",
-	"author": "torolocos",
-	"main": "index.json",
-	"license": "MIT",
+	"description": "ESlint config",
 	"keywords": [
 		"eslint",
 		"eslintconfig"
 	],
+	"homepage": "https://github.com/torolocos/eslint-config#readme",
+	"license": "MIT",
+	"author": "torolocos",
+	"files": [
+		"index.json"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "index.json",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/torolocos/eslint-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/torolocos/eslint-config/issues"
+	},
+	"scripts": {
+		"release": "auto shipit"
+	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.27.1",
 		"@typescript-eslint/parser": "^5.27.1",
@@ -20,5 +38,9 @@
 	},
 	"peerDependencies": {
 		"eslint": ">= 8"
+	},
+	"devDependencies": {
+		"@auto-it/conventional-commits": "^10.37.4",
+		"auto": "^10.37.4"
 	}
 }

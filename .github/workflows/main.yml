@@ -1,0 +1,27 @@
+on: [push]
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+        environment:
+          name: NPM
+          url: https://npmjs.com/torolocos/packages
+        steps:
+            - uses: actions/checkout@v3
+            - run: git fetch --unshallow --tags
+            - uses: actions/setup-node@v3
+              with:
+                node-version: 16
+            - id: yarn-cache-dir-path
+              run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+            - uses: actions/cache@v3
+              with:
+                  path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: ${{ runner.os }}-yarn
+            - run: yarn install --frozen-lockfile
+            - name: Create Release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run: npm run release
