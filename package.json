@@ -43,7 +43,12 @@
 	"auto": {
 		"plugins": [
 			"npm",
-			"conventional-commits"
+			[
+				"conventional-commits",
+				{
+					"preset": "conventionalcommits"
+				}
+			]
 		]
 	}
 }
