@@ -21,7 +21,7 @@
 		"url": "https://github.com/torolocos/eslint-config/issues"
 	},
 	"scripts": {
-		"release": "auto shipit"
+		"release": "auto shipit --no-version-prefix"
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.27.1",
