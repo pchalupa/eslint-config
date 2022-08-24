@@ -1,3 +1,19 @@
+# 0.0.7 (Wed Aug 24 2022)
+
+#### 🐛 Bug Fix
+
+- chore: add licence [#8](https://github.com/torolocos/eslint-config/pull/8) ([@pchalupa](https://github.com/pchalupa))
+
+#### 📝 Documentation
+
+- docs(README): fix typo [#7](https://github.com/torolocos/eslint-config/pull/7) ([@pchalupa](https://github.com/pchalupa))
+
+#### Authors: 1
+
+- Petr Chalupa ([@pchalupa](https://github.com/pchalupa))
+
+---
+
 # 0.0.6 (Tue Aug 09 2022)
 
 #### ⚠️ Pushed to `main`
